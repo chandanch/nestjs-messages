@@ -6,10 +6,10 @@ POST http://localhost:3000/messages
 content-type: application/json
 
 {
-    "content": "222222",
+    "content": "Hi welcome back",
     "status": true
 }
 
 
 ### Get message
-GET http://localhost:3000/messages/12221112
+GET http://localhost:3000/messages/918
