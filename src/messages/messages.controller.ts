@@ -11,10 +11,7 @@ import { MessageService } from './messages.service';
 
 @Controller('messages')
 export class MessagesController {
-    messageService: MessageService;
-    constructor() {
-        this.messageService = new MessageService();
-    }
+    constructor(public messageService: MessageService) {}
 
     @Get()
     listMessages() {
@@ -35,5 +32,10 @@ export class MessagesController {
         }
 
         return message;
+    }
+
+    @Post('/addpackage')
+    addPackage() {
+        return { status: 'messaged added' };
     }
 }
